@@ -2,6 +2,7 @@ name: Release
 
 # 仅推送版本 tag（如 v1.2.3）时构建所有平台，并统一发布到该 tag 的 Release。
 on:
+  workflow_dispatch:
   push:
     tags: ["v*"]
 
